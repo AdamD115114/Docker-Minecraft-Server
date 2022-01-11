@@ -1,11 +1,10 @@
-
-version: '3.9'
+version: '3.3'
 
 services:
   nginx:
     build: 
     context: .
-    dockerfile: dockerFile.nginx
+    dockerfile: Dockerfile
     args:
       PATH_TO_WORLD_DATA: ${PATH_TO_WORLD_SAVE}
     ports:
